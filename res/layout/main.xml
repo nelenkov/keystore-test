@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/install_pkcs12_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Install PKCS#12" />
+
+    <Button
+        android:id="@+id/install_cert_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Install CA certificate" />
+
+    <Button
+        android:id="@+id/use_key_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Use private key" />
+
+    <Button
+        android:id="@+id/list_trusted_certs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List trusted certificates" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+</LinearLayout>
