@@ -1,0 +1,17 @@
+Sample code for the 'Using the ICS KeyChain API' and related articles 
+on http://nelenkov.blogspot.com/
+
+How to use:
+
+1. Create a CA with OpenSSL, issue an end entity certificate, create a 
+PKCS#12 file.
+2. Copy the CA certificte and PKCS#12 files to the device's external storage.
+
+$ adb push cacert.pem /mnt/sdcard
+$ adb push keystore-test.pfx /mnt/sdcard
+
+3. Import the project in Eclipse, change the file name constants if needed, 
+and run on a ICS device/emulator.
+4. Press buttons to play. Most output goes to logcat, so a have a terminal 
+window handy.
+
